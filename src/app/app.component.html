@@ -1,0 +1,63 @@
+<h1 class="bg-slate-500 ">Test</h1>
+
+
+<div class="card flex justify-center mt-5">
+    <p-colorpicker [(ngModel)]="color" />
+</div>
+
+
+<div class="card flex justify-center mt-5">
+    <p-slider [(ngModel)]="value" styleClass="w-56" />
+</div>
+
+
+<div class="card flex justify-center mt-5">
+    <button pButton pRipple severity="success">
+        <WindowMaximizeIcon pButtonIcon />
+        <span pButtonLabel>label</span>
+    </button>
+</div>
+
+
+<div class="card flex justify-center mt-5">
+    <p-organization-chart [value]="data" />
+</div>
+
+
+<div class="card flex justify-center">
+    <p-autocomplete [(ngModel)]="value" [suggestions]="items" (completeMethod)="search($event)" />
+</div>
+
+
+<div class="card flex justify-center mt-5">
+    <p-datepicker [(ngModel)]="date" />
+
+</div>
+
+<div class="card flex justify-center mt-5">
+      <p-datepicker class="max-w-full" [(ngModel)]="date" [inline]="true" [showWeek]="true" />
+
+</div>
+
+
+
+<div class="card  flex justify-center mt-5">
+    <p-editor [(ngModel)]="text" [style]="{ height: '320px' }" />
+</div>
+
+
+<div class="card  flex justify-center mt-5">
+<p-floatlabel>
+    <input id="username" pInputText [(ngModel)]="value2" />
+    <label for="username">Username</label>
+</p-floatlabel>
+</div>
+
+<div class="card  flex justify-center mt-5 w-50%">
+<p-inputgroup>
+    <p-inputgroup-addon>
+        <i class="pi pi-user"></i>
+    </p-inputgroup-addon>
+    <input pInputText [(ngModel)]="text1" placeholder="Username" />
+</p-inputgroup>
+</div>
