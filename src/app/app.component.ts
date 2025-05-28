@@ -1,29 +1,17 @@
-import {
-  AfterViewInit,
-  Component,
-  effect,
-  inject,
-  PLATFORM_ID,
-} from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { FormsModule } from '@angular/forms';
+import { Editor } from 'primeng/editor';
+import { DatePicker } from 'primeng/datepicker';
+import { ColorPicker } from 'primeng/colorpicker';
+import { ChartModule } from 'primeng/chart';
+import {Component} from '@angular/core';
 import { Slider } from 'primeng/slider';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { Listbox } from 'primeng/listbox';
-import { ChartModule } from 'primeng/chart';
-import { HttpClient } from '@angular/common/http';
-import { filter, map } from 'rxjs';
-import { ColorPicker } from 'primeng/colorpicker';
+
 import { ButtonModule } from 'primeng/button';
 import { RippleModule } from 'primeng/ripple';
 import { TreeNode } from 'primeng/api';
 import { OrganizationChartModule } from 'primeng/organizationchart';
 import { AutoComplete } from 'primeng/autocomplete';
 import { AutoCompleteModule } from 'primeng/autocomplete';
-import { DatePickerModule } from 'primeng/datepicker';
-import { DatePicker } from 'primeng/datepicker';
-import { EditorModule } from 'primeng/editor';
-import { Editor } from 'primeng/editor';
 import { FloatLabelModule } from 'primeng/floatlabel';
 import { InputTextModule } from 'primeng/inputtext';
 
@@ -31,6 +19,7 @@ import { InputGroupModule } from 'primeng/inputgroup';
 import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
 import { SelectModule } from 'primeng/select';
 import { InputNumberModule } from 'primeng/inputnumber';
+import { FormsModule } from '@angular/forms';
 
 interface City {
   name: string;
@@ -48,7 +37,6 @@ interface AutoCompleteCompleteEvent {
     FormsModule,
     Slider,
     CommonModule,
-    Listbox,
     ChartModule,
     FormsModule,
     ColorPicker,
